@@ -7,9 +7,17 @@
 
 import Foundation
 
+protocol PeopleViewModelDelegate: AnyObject {
+    func didFinish()
+    func didFail(error: Error)
+}
+
 class PeopleViewModel {
-    private var people = [PersonResponse]()
+    private(set) var people = [PersonResponse]()
     
+    weak var delegate: PeopleViewModelDelegate?
+    
+    @MainActor
     func getUsers() {
         Task { [weak self] in
             do {
@@ -20,8 +28,10 @@ class PeopleViewModel {
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 
                 self?.people = try decoder.decode(UserResponse.self, from: data).data
+                self?.delegate?.didFinish()
+                
             } catch {
-                print(error)
+                self?.delegate?.didFail(error: error)
             }
         }
        

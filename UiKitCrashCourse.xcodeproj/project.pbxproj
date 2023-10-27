@@ -15,6 +15,7 @@
 		0787DBC82ADDEB4F00BA5856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0787DBC72ADDEB4F00BA5856 /* Assets.xcassets */; };
 		0787DBCB2ADDEB4F00BA5856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0787DBC92ADDEB4F00BA5856 /* LaunchScreen.storyboard */; };
 		07FB3E162AE1655300F65D17 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FB3E152AE1655300F65D17 /* PersonView.swift */; };
+		4EF316192AEB1DDB00C99F03 /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF316182AEB1DDB00C99F03 /* PersonCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0787DBCA2ADDEB4F00BA5856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0787DBCC2ADDEB4F00BA5856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FB3E152AE1655300F65D17 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		4EF316182AEB1DDB00C99F03 /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		0787DBBD2ADDEB4E00BA5856 /* UiKitCrashCourse */ = {
 			isa = PBXGroup;
 			children = (
+				4EF316182AEB1DDB00C99F03 /* PersonCollectionViewCell.swift */,
 				0725FACA2AE28D69008FC0C2 /* Model.swift */,
 				0725FACC2AE28F01008FC0C2 /* PeopleViewModel.swift */,
 				0787DBBE2ADDEB4E00BA5856 /* AppDelegate.swift */,
@@ -148,6 +151,7 @@
 				0787DBC32ADDEB4E00BA5856 /* PeopleViewController.swift in Sources */,
 				07FB3E162AE1655300F65D17 /* PersonView.swift in Sources */,
 				0787DBBF2ADDEB4E00BA5856 /* AppDelegate.swift in Sources */,
+				4EF316192AEB1DDB00C99F03 /* PersonCollectionViewCell.swift in Sources */,
 				0787DBC12ADDEB4E00BA5856 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
